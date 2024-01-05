@@ -1,0 +1,56 @@
+.box {
+  height: 100vw;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box .group {
+  height: 100%;
+  width: 100vw;
+  max-width: 800px;
+
+}
+
+.box .overlap-group {
+  background-image: url(/unsplash_IpTPp_aPbYE.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 100%;
+  max-height: 800px;
+  position: relative;
+  width: 100%;
+}
+
+.box .text-wrapper {
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 400;
+  left: 25px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 147px;
+  width: 317px;
+}
+
+.box .primary-button {
+  all: unset;
+  background-color: #a1ff00;
+  border-radius: 48px;
+  left: 25px;
+  overflow: hidden;
+  padding: 16px;
+  position: absolute;
+  top: 253px;
+}
+
+.box .div {
+  color: #100e19;
+  font-size: .875rem;
+  font-weight: 500;
+  line-height: 18px;
+  position: relative;
+  width: fit-content;
+}

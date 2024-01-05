@@ -20,6 +20,7 @@
 
 .site-logo {
   width: 44.6vw;
+  max-width: 200px;  
   height: auto;
 }
 
@@ -49,5 +50,13 @@
 /* Scales placeholder SVG based on screen width */
 .hamburger {
   width: 8.2vw;
+  max-width: 40px;
   height: 8.2vw;
+  max-height: 40px;
+}
+
+@media only screen and (min-width:769px) {
+  .hamburger {
+    display: none;
+  }
 }
