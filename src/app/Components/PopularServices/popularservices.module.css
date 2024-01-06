@@ -3,7 +3,7 @@
   position: relative;
   width: 100%;
   max-width: 550px;
-  padding: 4rem 1.5rem 4rem 1.5rem;
+  padding: 4rem 1.8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,7 +28,7 @@
 }
 
 .frame .service {
-  align-items: flex-start;
+  align-items: center;
   display: inline-flex;
   gap: 1rem;
   position: relative;
@@ -41,10 +41,8 @@
 }
 
 .frame .text-wrapper-2 {
-  color: #ffffff;
   font-size: 1.25rem;
   font-style: italic;
-  font-weight: 500;
   position: relative;
   width: fit-content;
 }
@@ -72,6 +70,7 @@
 .frame .text-wrapper-3 {
   color: #a1ff00;
   font-size: 1rem;
+  line-height: 1.125rem;
   font-weight: 500;
   line-height: 14px;
   position: relative;

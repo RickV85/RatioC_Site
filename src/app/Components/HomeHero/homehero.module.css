@@ -1,4 +1,4 @@
-.box {
+.hero {
   height: 100vw;
   max-height: 800px;
   width: 100vw;
@@ -7,14 +7,14 @@
   align-items: center;
 }
 
-.box .group {
+.hero .group {
   height: 100%;
   width: 100vw;
   max-width: 800px;
 
 }
 
-.box .overlap-group {
+.hero .overlap-group {
   background-image: url(/HomeHeroSVG.svg);
   background-position: 50% 50%;
   background-size: cover;
@@ -24,7 +24,7 @@
   width: 100%;
 }
 
-.box .text-wrapper {
+.hero .text-wrapper {
   font-size: 1.25rem;
   font-style: italic;
   font-weight: 400;
@@ -36,7 +36,7 @@
   width: 317px;
 }
 
-.box .primary-button {
+.hero .primary-button {
   all: unset;
   background-color: #a1ff00;
   border-radius: 48px;
@@ -45,13 +45,12 @@
   padding: 16px;
   position: absolute;
   top: 253px;
-}
 
-.box .div {
   color: #100e19;
   font-size: .875rem;
   font-weight: 500;
-  line-height: 18px;
+  line-height: .75rem;
   position: relative;
   width: fit-content;
 }
+
