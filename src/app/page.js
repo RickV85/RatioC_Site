@@ -27,6 +27,8 @@ export default function Home() {
         menuOpen={menuOpen}
         setMenuOpen={setMenuOpen}
         toggleContactMenu={toggleContactMenu}
+        showContact={showContact}
+        setShowContact={setShowContact}
       />
       {menuOpen ? null : (
         <>

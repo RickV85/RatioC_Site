@@ -1,9 +1,16 @@
+import { ContactForm } from "../ContactForm/ContactForm";
 import { MobileMenu } from "../MobileMenu/MobileMenu";
 import SiteTitleSVG from "../SiteTitleSVG/SiteTitleSVG";
 import styles from "./header.module.css";
 import Hamburger from "hamburger-react";
 
-export default function Header({ menuOpen, setMenuOpen, toggleContactMenu }) {
+export default function Header({
+  menuOpen,
+  setMenuOpen,
+  toggleContactMenu,
+  showContact,
+  setShowContact,
+}) {
   return (
     <>
       <header className={styles.header}>
@@ -23,7 +30,14 @@ export default function Header({ menuOpen, setMenuOpen, toggleContactMenu }) {
             >
               <circle cx="16" cy="16" r="15.5" stroke="white" />
             </svg>
-            <div className={styles["hamburger-button"]}>
+            <div
+              onClick={() => {
+                if (showContact) {
+                  setShowContact(false);
+                }
+              }}
+              className={styles["hamburger-button"]}
+            >
               <Hamburger
                 toggled={menuOpen}
                 toggle={setMenuOpen}
@@ -37,7 +51,10 @@ export default function Header({ menuOpen, setMenuOpen, toggleContactMenu }) {
           </div>
         </div>
       </header>
-      {menuOpen ? <MobileMenu toggleContactMenu={toggleContactMenu} /> : null}
+      {menuOpen && !showContact ? (
+        <MobileMenu toggleContactMenu={toggleContactMenu} />
+      ) : null}
+      {menuOpen && showContact ? <ContactForm /> : null}
     </>
   );
 }
