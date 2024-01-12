@@ -52,7 +52,10 @@ export default function Header({
         </div>
       </header>
       {menuOpen && !showContact ? (
-        <MobileMenu toggleContactMenu={toggleContactMenu} />
+        <MobileMenu
+          toggleContactMenu={toggleContactMenu}
+          setMenuOpen={setMenuOpen}
+        />
       ) : null}
       {menuOpen && showContact ? <ContactForm /> : null}
     </>

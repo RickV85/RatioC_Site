@@ -3,7 +3,7 @@ import styles from "./mobilemenu.module.css";
 import Link from "next/link";
 import { MobileContactLinks } from "@/app/MobileContactLinks/MobileContactLinks";
 
-export const MobileMenu = ({ toggleContactMenu }) => {
+export const MobileMenu = ({ toggleContactMenu, setMenuOpen }) => {
   return (
     <div className={styles["menu-wrapper"]}>
       <menu className={styles.menu}>
@@ -16,16 +16,32 @@ export const MobileMenu = ({ toggleContactMenu }) => {
         </div>
 
         <div className={styles["link-container"]}>
-          <Link href={"/"} className={styles["menu-item"]}>
+          <Link
+            href={"/"}
+            onClick={() => setMenuOpen(false)}
+            className={styles["menu-item"]}
+          >
             HOME
           </Link>
-          <Link href={"/"} className={styles["menu-item"]}>
+          <Link
+            href={"/"}
+            onClick={() => setMenuOpen(false)}
+            className={styles["menu-item"]}
+          >
             ABOUT US
           </Link>
-          <Link href={"/"} className={styles["menu-item"]}>
+          <Link
+            href={"/"}
+            onClick={() => setMenuOpen(false)}
+            className={styles["menu-item"]}
+          >
             PORTFOLIO
           </Link>
-          <Link href={"/"} className={styles["menu-item"]}>
+          <Link
+            href={"/"}
+            onClick={() => setMenuOpen(false)}
+            className={styles["menu-item"]}
+          >
             SERVICES
           </Link>
         </div>
