@@ -5,22 +5,22 @@ export const PopularServices = () => {
   return (
     <div className={styles.frame}>
       <div className={styles.div}>
-        <div className={styles["text-wrapper"]}>POPULAR SERVICES</div>
+        <h2 className={styles["header"]}>POPULAR SERVICES</h2>
         <div className={styles.service}>
           <img
             className={styles.img}
             alt="Lightning bolt"
             src="/lightning-bolt-circle.png"
           />
-          <div className={styles["text-wrapper-2"]}>Electrical Engineering</div>
+          <h3 className={styles["service-title"]}>Electrical Engineering</h3>
         </div>
         <div className={styles.service}>
           <img className={styles.img} alt="Tools" src="/tools.png" />
-          <div className={styles["text-wrapper-2"]}>Root Cause Analysis</div>
+          <h3 className={styles["service-title"]}>Root Cause Analysis</h3>
         </div>
         <div className={styles.service}>
           <img className={styles.img} alt="Cube" src="/cube.png" />
-          <div className={styles["text-wrapper-2"]}>Optics</div>
+          <h3 className={styles["service-title"]}>Optics</h3>
         </div>
       </div>
       <img
