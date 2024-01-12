@@ -1,7 +1,11 @@
+"use client";
 import SiteTitleSVG from "../SiteTitleSVG/SiteTitleSVG";
 import styles from "./header.module.css";
+import Hamburger from "hamburger-react";
+import { useState } from "react";
 
 export default function Header() {
+  const [isOpen, setOpen] = useState(false);
   return (
     <header className={styles.header}>
       <h1 className={styles.visuallyHidden}>
@@ -19,10 +23,17 @@ export default function Header() {
             fill="none"
           >
             <circle cx="16" cy="16" r="15.5" stroke="white" />
-            <rect x="8" y="11" width="16" height="1" rx="0.5" fill="white" />
-            <rect x="8" y="16" width="16" height="1" rx="0.5" fill="white" />
-            <rect x="8" y="21" width="16" height="1" rx="0.5" fill="white" />
           </svg>
+          <div className={styles["hamburger-button"]}>
+            <Hamburger
+              toggled={isOpen}
+              toggle={setOpen}
+              direction="left"
+              label="open hamburger menu button"
+              rounded={true}
+              size={16}
+            />
+          </div>
         </div>
       </div>
     </header>
