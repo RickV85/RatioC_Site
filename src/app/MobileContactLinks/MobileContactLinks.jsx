@@ -1,4 +1,4 @@
-import styles from "./styles.module.css";
+import styles from "./mobilecontactlinks.module.css";
 
 export const MobileContactLinks = () => {
   return (
