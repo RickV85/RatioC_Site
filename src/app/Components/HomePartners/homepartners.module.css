@@ -64,7 +64,7 @@
 
 .frame .testimonial-title {
   color: #a1ff00;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: 700;
   position: relative;
   width: fit-content;
@@ -72,7 +72,7 @@
 
 .frame .testimonial-body{
   align-self: stretch;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: 300;
   position: relative;
 }

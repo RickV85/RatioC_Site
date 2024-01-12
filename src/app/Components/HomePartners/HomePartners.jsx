@@ -11,6 +11,7 @@ export const HomePartners = () => {
             alt="Unsplash"
             src="/unsplash_DKPh3G8HLRU.svg"
           />
+          {/* Testimonial component if more added? */}
           <div className={styles["testimonial-wrapper"]}>
             <p className={styles["testimonial-title"]}>
               Head of Dept, <br />
