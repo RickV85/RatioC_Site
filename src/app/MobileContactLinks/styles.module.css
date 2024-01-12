@@ -1,0 +1,15 @@
+.mobile-contact-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.75rem;
+}
+
+.contact-icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+.scale-down {
+  transform: scale(0.75);
+}

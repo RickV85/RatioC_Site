@@ -13,12 +13,13 @@ const prompt = Prompt({
   display: "swap",
   preload: true,
   fallback: "Arial",
+  variable: "--font-prompt"
 });
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={prompt.className}>{children}</body>
+    <html lang="en" className={prompt.variable}>
+      <body>{children}</body>
     </html>
   );
 }
