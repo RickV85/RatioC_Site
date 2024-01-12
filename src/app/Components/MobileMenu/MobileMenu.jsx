@@ -3,7 +3,7 @@ import styles from "./mobilemenu.module.css";
 import Link from "next/link";
 import { MobileContactLinks } from "@/app/MobileContactLinks/MobileContactLinks";
 
-export const MobileMenu = () => {
+export const MobileMenu = ({ toggleContactMenu }) => {
   return (
     <div className={styles["menu-wrapper"]}>
       <menu className={styles.menu}>
@@ -29,8 +29,11 @@ export const MobileMenu = () => {
             SERVICES
           </Link>
         </div>
-        <button className={styles["contact-button"]}>
-        <p>Contact Us</p>
+        <button
+          onClick={() => toggleContactMenu()}
+          className={styles["contact-button"]}
+        >
+          <p>Contact Us</p>
         </button>
         <MobileContactLinks />
       </menu>

@@ -3,7 +3,7 @@ import SiteTitleSVG from "../SiteTitleSVG/SiteTitleSVG";
 import styles from "./header.module.css";
 import Hamburger from "hamburger-react";
 
-export default function Header({menuOpen, setMenuOpen}) {
+export default function Header({ menuOpen, setMenuOpen, toggleContactMenu }) {
   return (
     <>
       <header className={styles.header}>
@@ -37,7 +37,7 @@ export default function Header({menuOpen, setMenuOpen}) {
           </div>
         </div>
       </header>
-      {menuOpen ? <MobileMenu /> : null}
+      {menuOpen ? <MobileMenu toggleContactMenu={toggleContactMenu} /> : null}
     </>
   );
 }

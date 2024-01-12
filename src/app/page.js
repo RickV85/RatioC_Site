@@ -9,9 +9,25 @@ import { useState } from "react";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [showContact, setShowContact] = useState(false);
+
+  const toggleContactMenu = () => {
+    if (!showContact) {
+      setShowContact(true);
+      setMenuOpen(true);
+    } else {
+      setShowContact(false);
+      setMenuOpen(false);
+    }
+  };
+
   return (
     <>
-      <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Header
+        menuOpen={menuOpen}
+        setMenuOpen={setMenuOpen}
+        toggleContactMenu={toggleContactMenu}
+      />
       {menuOpen ? null : (
         <>
           <main className={styles.main}>
@@ -19,7 +35,7 @@ export default function Home() {
             <PopularServices />
             <HomePartners />
           </main>
-          <Footer />
+          <Footer toggleContactMenu={toggleContactMenu} />
         </>
       )}
     </>
