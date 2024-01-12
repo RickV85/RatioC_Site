@@ -1,6 +1,6 @@
-import styles from "./contactform.module.css";
+import styles from "./contact.module.css";
 
-export const ContactForm = () => {
+export const Contact = () => {
   return (
     <div className={styles.wrapper}>
       <section className={styles.contact}>

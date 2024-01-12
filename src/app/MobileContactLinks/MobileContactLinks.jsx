@@ -3,6 +3,7 @@ import styles from "./mobilecontactlinks.module.css";
 export const MobileContactLinks = () => {
   return (
     <div className={styles["mobile-contact-div"]}>
+    {/* Need to add links to each of these */}
       <img
         className={`${styles["contact-icon"]} ${styles["scale-down"]}`}
         src="/LinkedInLogo.svg"

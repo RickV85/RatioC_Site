@@ -1,8 +1,9 @@
-import { ContactForm } from "../ContactForm/ContactForm";
+import { Contact } from "../Contact/Contact";
 import { MobileMenu } from "../MobileMenu/MobileMenu";
 import SiteTitleSVG from "../SiteTitleSVG/SiteTitleSVG";
 import styles from "./header.module.css";
 import Hamburger from "hamburger-react";
+import Link from "next/link";
 
 export default function Header({
   menuOpen,
@@ -17,10 +18,12 @@ export default function Header({
         <h1 className={styles.visuallyHidden}>
           Ratiocinative Engineering Services LLC
         </h1>
-        <div className={styles.siteTitleDiv}>
-          <SiteTitleSVG />
-          <h2 className={styles.tagline}>Rapid Engineering Services</h2>
-        </div>
+        <Link href={"/"}>
+          <div className={styles.siteTitleDiv}>
+            <SiteTitleSVG />
+            <h2 className={styles.tagline}>Rapid Engineering Services</h2>
+          </div>
+        </Link>
         <div className={styles.hamburgerContainer}>
           <div className={styles.hamburger}>
             <svg
@@ -57,7 +60,7 @@ export default function Header({
           setMenuOpen={setMenuOpen}
         />
       ) : null}
-      {menuOpen && showContact ? <ContactForm /> : null}
+      {menuOpen && showContact ? <Contact /> : null}
     </>
   );
 }

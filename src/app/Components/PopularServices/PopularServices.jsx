@@ -6,6 +6,7 @@ export const PopularServices = () => {
     <div className={styles.frame}>
       <div className={styles.div}>
         <h2 className={styles["header"]}>POPULAR SERVICES</h2>
+        {/* Link to /services/nameOfService */}
         <div className={styles.service}>
           <img
             className={styles.img}
@@ -14,10 +15,12 @@ export const PopularServices = () => {
           />
           <h3 className={styles["service-title"]}>Electrical Engineering</h3>
         </div>
+        {/* Link to /services/nameOfService */}
         <div className={styles.service}>
           <img className={styles.img} alt="Tools" src="/tools.png" />
           <h3 className={styles["service-title"]}>Root Cause Analysis</h3>
         </div>
+        {/* Link to /services/nameOfService */}
         <div className={styles.service}>
           <img className={styles.img} alt="Cube" src="/cube.png" />
           <h3 className={styles["service-title"]}>Optics</h3>
@@ -28,6 +31,7 @@ export const PopularServices = () => {
         alt="Mask group"
         src="/PopServicesSVG.svg"
       />
+      {/* Add link here to /services */}
       <div className={styles["button-wrapper"]}>
         <div className={styles["primary-button"]}>
           <div role="button" className={styles["text-wrapper-3"]}>
